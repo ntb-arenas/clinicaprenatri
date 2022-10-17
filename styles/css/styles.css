@@ -18,7 +18,7 @@ body {
 }
 
 .touch-none {
-  position: fixed;
+  touch-action: none;
 }
 
 header {
@@ -28,7 +28,6 @@ header {
   background-repeat: no-repeat;
   background-color: #a3c3f4;
   background-size: contain;
-  touch-action: none;
 }
 @media (max-width: 576px) {
   header {

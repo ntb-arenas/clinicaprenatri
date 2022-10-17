@@ -10,7 +10,6 @@ header {
   background-repeat: no-repeat;
   background-color: $color-bg-secondary;
   background-size: contain;
-  touch-action: none;
 
   @media (max-width: 576px) {
     height: 100%;

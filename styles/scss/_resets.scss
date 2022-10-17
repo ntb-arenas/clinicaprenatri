@@ -15,7 +15,6 @@ body {
   max-width: 100%;
   height: auto;
 }
-
 .touch-none {
-  position: fixed;
+  touch-action: none;
 }
