@@ -3,11 +3,6 @@
 @import "resets";
 @import "variables";
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
 header {
   height: 100vh;
   background: url(/assets/img/curve-separate.png);
@@ -15,6 +10,7 @@ header {
   background-repeat: no-repeat;
   background-color: $color-bg-secondary;
   background-size: contain;
+  touch-action: none;
 
   @media (max-width: 576px) {
     height: 100%;
@@ -25,7 +21,6 @@ header {
   }
 
   nav {
-    margin-bottom: 2rem;
     .nav-menu {
       display: flex;
       align-items: center;
@@ -58,6 +53,8 @@ header {
     }
 
     @media (max-width: 768px) {
+      margin-bottom: 2rem;
+
       .nav-menu {
         position: fixed;
         left: -100%;
@@ -67,13 +64,13 @@ header {
         background-color: $color-bg-secondary;
         width: 100%;
         height: 100%;
-        padding-top: 4rem;
+        padding-top: 2rem;
         text-align: center;
         transition: $transition;
         z-index: 1;
 
         a {
-          padding: 3rem 0;
+          padding: 1rem 0;
           font-size: 1.5rem;
         }
 

@@ -17,6 +17,10 @@ body {
   height: auto;
 }
 
+.touch-none {
+  touch-action: none;
+}
+
 header {
   height: 100vh;
   background: url(/assets/img/curve-separate.png);
@@ -24,6 +28,7 @@ header {
   background-repeat: no-repeat;
   background-color: #a3c3f4;
   background-size: contain;
+  touch-action: none;
 }
 @media (max-width: 576px) {
   header {
@@ -34,9 +39,6 @@ header {
   header {
     height: 100%;
   }
-}
-header nav {
-  margin-bottom: 2rem;
 }
 header nav .nav-menu {
   display: flex;
@@ -63,6 +65,9 @@ header nav .hamburger.active::after {
   font-size: 2.4rem;
 }
 @media (max-width: 768px) {
+  header nav {
+    margin-bottom: 2rem;
+  }
   header nav .nav-menu {
     position: fixed;
     left: -100%;
@@ -72,13 +77,13 @@ header nav .hamburger.active::after {
     background-color: #a3c3f4;
     width: 100%;
     height: 100%;
-    padding-top: 4rem;
+    padding-top: 2rem;
     text-align: center;
     transition: all 0.3s ease-in-out;
     z-index: 1;
   }
   header nav .nav-menu a {
-    padding: 3rem 0;
+    padding: 1rem 0;
     font-size: 1.5rem;
   }
   header nav .nav-menu.active {
