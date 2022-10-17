@@ -1,6 +1,7 @@
 @import "colors";
 @import "fonts";
 @import "resets";
+@import "variables";
 
 .img-fluid {
   max-width: 100%;
@@ -15,19 +16,8 @@ header {
   background-color: $color-bg-secondary;
 
   nav {
-    display: flex;
-    justify-content: space-between;
-    margin-inline: 50px;
-
-    .nav-logo {
-      max-width: 400px;
-
-      img {
-        width: 100%;
-      }
-    }
-
-    .nav-links {
+    margin-bottom: 2rem;
+    .nav-menu {
       display: flex;
       align-items: center;
 
@@ -35,16 +25,57 @@ header {
         font-size: 1.2rem;
         color: $color-text-primary;
         text-shadow: 2px 2px $color-bg;
-        margin-inline: 20px;
+        margin-inline: 0.8rem;
+      }
+    }
+
+    .hamburger {
+      font: var(--fa-font-solid);
+      color: $color-text-primary;
+      text-shadow: 2px 2px $color-bg;
+      cursor: pointer;
+
+      &::after {
+        content: "\f0c9";
+        font-size: 2rem;
+      }
+
+      &.active {
+        &::after {
+          content: "\f00d";
+          font-size: 2.4rem;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: $color-bg-secondary;
+        width: 100%;
+        height: 100%;
+        padding-top: 4rem;
+        text-align: center;
+        transition: $transition;
+        z-index: 1;
+
+        a {
+          padding: 3rem 0;
+          font-size: 1.5rem;
+        }
+
+        &.active {
+          left: 0;
+        }
       }
     }
   }
 
   .header-content {
-    max-width: 1300px;
-    margin-inline: auto;
-    padding-inline: 10px;
-
     .header-wrapper {
       .title {
         color: $color-text-primary;
