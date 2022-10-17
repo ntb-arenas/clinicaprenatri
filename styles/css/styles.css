@@ -24,6 +24,11 @@ header {
   background-repeat: no-repeat;
   background-color: #a3c3f4;
 }
+@media (max-width: 576px) {
+  header {
+    height: 100%;
+  }
+}
 header nav {
   margin-bottom: 2rem;
 }
