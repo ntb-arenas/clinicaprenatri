@@ -1,0 +1,22 @@
+{
+  "name": "clinicaprenatri",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w styles/scss/main.scss styles/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntb-arenas/clinicaprenatri.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ntb-arenas/clinicaprenatri/issues"
+  },
+  "homepage": "https://github.com/ntb-arenas/clinicaprenatri#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
