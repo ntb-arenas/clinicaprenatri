@@ -2,6 +2,11 @@
 @import "fonts";
 @import "resets";
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 header {
   height: 100vh;
   background: url(/assets/img/curve-separate.png);
@@ -36,19 +41,11 @@ header {
   }
 
   .header-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1400px;
+    max-width: 1300px;
     margin-inline: auto;
     padding-inline: 10px;
 
     .header-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      width: 100%;
-
       .title {
         color: $color-text-primary;
         max-width: 800px;
@@ -56,13 +53,6 @@ header {
         h1 {
           font-size: 3rem;
           text-shadow: 2px 2px $color-bg;
-        }
-      }
-
-      .header-img {
-        img {
-          width: 100%;
-          max-height: 700px;
         }
       }
     }
