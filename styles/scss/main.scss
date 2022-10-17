@@ -11,14 +11,6 @@ header {
   background-color: $color-bg-secondary;
   background-size: contain;
 
-  @media (max-width: 576px) {
-    height: 100%;
-  }
-
-  @media (max-width: 768px) {
-    height: 100%;
-  }
-
   nav {
     .nav-menu {
       display: flex;
@@ -50,10 +42,27 @@ header {
         }
       }
     }
+  }
 
-    @media (max-width: 768px) {
+  .header-content {
+    .header-wrapper {
+      .title {
+        color: $color-text-primary;
+        max-width: 800px;
+
+        h1 {
+          font-size: 3rem;
+          text-shadow: 2px 2px $color-bg;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 100%;
+    nav {
       margin-bottom: 2rem;
-
+      height: 100%;
       .nav-menu {
         position: fixed;
         left: -100%;
@@ -67,12 +76,10 @@ header {
         text-align: center;
         transition: $transition;
         z-index: 1;
-
         a {
           padding: 1rem 0;
           font-size: 1.5rem;
         }
-
         &.active {
           left: 0;
         }
@@ -80,15 +87,22 @@ header {
     }
   }
 
-  .header-content {
-    .header-wrapper {
-      .title {
-        color: $color-text-primary;
-        max-width: 800px;
+  @media (max-width: 576px) {
+    height: 100%;
 
-        h1 {
-          font-size: 3rem;
-          text-shadow: 2px 2px $color-bg;
+    .header-content {
+      .header-wrapper {
+        .title {
+          h1 {
+            font-size: 1.7rem;
+          }
+          p {
+            text-justify: auto;
+          }
+        }
+
+        .header-img {
+          max-width: 200px;
         }
       }
     }
