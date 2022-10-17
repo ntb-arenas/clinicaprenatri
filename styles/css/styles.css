@@ -18,7 +18,7 @@ body {
 }
 
 .touch-none {
-  touch-action: none;
+  position: fixed;
 }
 
 header {
