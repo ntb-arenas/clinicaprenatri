@@ -1,0 +1,69 @@
+@import "colors";
+@import "fonts";
+@import "resets";
+
+header {
+  height: 100vh;
+  background: url(/assets/img/curve-separate.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: $color-bg-secondary;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 50px;
+
+    .nav-logo {
+      max-width: 400px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+
+      a {
+        font-size: 1.2rem;
+        color: $color-text-primary;
+        text-shadow: 2px 2px $color-bg;
+        margin-inline: 20px;
+      }
+    }
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin-inline: auto;
+
+    .header-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+
+      .title {
+        color: $color-text-primary;
+        max-width: 800px;
+
+        h1 {
+          font-size: 3rem;
+          text-shadow: 2px 2px $color-bg;
+        }
+      }
+
+      .header-img {
+        img {
+          width: 100%;
+          max-height: 700px;
+        }
+      }
+    }
+  }
+}

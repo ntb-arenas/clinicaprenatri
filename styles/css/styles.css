@@ -1,3 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  height: 100vh;
+  background: url(/assets/img/curve-separate.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #a3c3f4;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 50px;
+}
+header nav .nav-logo {
+  max-width: 400px;
+}
+header nav .nav-logo img {
+  width: 100%;
+}
+header nav .nav-links {
+  display: flex;
+  align-items: center;
+}
+header nav .nav-links a {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 2px 2px #2573d4;
+  margin-inline: 20px;
+}
+header .header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+header .header-content .header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+header .header-content .header-wrapper .title {
+  color: #ffffff;
+  max-width: 800px;
+}
+header .header-content .header-wrapper .title h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px #2573d4;
+}
+header .header-content .header-wrapper .header-img img {
+  width: 100%;
+  max-height: 700px;
+}
 
 /*# sourceMappingURL=styles.css.map */
