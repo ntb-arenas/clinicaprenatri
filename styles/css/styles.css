@@ -46,6 +46,7 @@ header .header-content {
   align-items: center;
   max-width: 1400px;
   margin-inline: auto;
+  padding-inline: 10px;
 }
 header .header-content .header-wrapper {
   display: flex;
