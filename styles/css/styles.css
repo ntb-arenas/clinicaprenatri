@@ -23,6 +23,7 @@ header {
   background-position: bottom;
   background-repeat: no-repeat;
   background-color: #a3c3f4;
+  background-size: contain;
 }
 @media (max-width: 576px) {
   header {
