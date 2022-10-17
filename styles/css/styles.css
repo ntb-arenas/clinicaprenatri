@@ -29,6 +29,11 @@ header {
     height: 100%;
   }
 }
+@media (max-width: 768px) {
+  header {
+    height: 100%;
+  }
+}
 header nav {
   margin-bottom: 2rem;
 }
