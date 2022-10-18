@@ -90,10 +90,16 @@ header .header-content .header-wrapper .title h1 {
   header nav .nav-menu.active {
     left: 0;
   }
+  header .header-content .header-wrapper .header-img {
+    max-width: 250px;
+  }
 }
 @media (max-width: 576px) {
   header {
     height: 100%;
+  }
+  header .header-content .header-wrapper .title {
+    margin-bottom: 6rem;
   }
   header .header-content .header-wrapper .title h1 {
     font-size: 1.7rem;
@@ -102,7 +108,7 @@ header .header-content .header-wrapper .title h1 {
     text-justify: auto;
   }
   header .header-content .header-wrapper .header-img {
-    max-width: 200px;
+    max-width: 150px;
   }
 }
 
