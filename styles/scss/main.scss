@@ -76,11 +76,9 @@ header {
   }
 
   @media (max-width: 768px) {
-    height: 100%;
     .header-wrapper {
       nav {
         margin-bottom: 2rem;
-        height: 100%;
         .nav-menu {
           position: fixed;
           left: -100%;
@@ -120,7 +118,6 @@ header {
   }
 
   @media (max-width: 576px) {
-    height: 100%;
     .header-wrapper {
       .header-content {
         .header-content-wrapper {
@@ -131,7 +128,6 @@ header {
             p {
               text-justify: auto;
             }
-            margin-bottom: 6rem;
           }
 
           .header-img {

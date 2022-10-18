@@ -81,12 +81,8 @@ header .header-wrapper .header-content .header-content-wrapper .title p {
   text-shadow: 1px 1px #2573d4;
 }
 @media (max-width: 768px) {
-  header {
-    height: 100%;
-  }
   header .header-wrapper nav {
     margin-bottom: 2rem;
-    height: 100%;
   }
   header .header-wrapper nav .nav-menu {
     position: fixed;
@@ -117,12 +113,6 @@ header .header-wrapper .header-content .header-content-wrapper .title p {
   }
 }
 @media (max-width: 576px) {
-  header {
-    height: 100%;
-  }
-  header .header-wrapper .header-content .header-content-wrapper .title {
-    margin-bottom: 6rem;
-  }
   header .header-wrapper .header-content .header-content-wrapper .title h1 {
     font-size: 1.7rem;
   }
