@@ -1,9 +1,9 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-const body = document.querySelector("body");
+const header = document.querySelector("header");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
-  body.classList.toggle("touch-none");
+  header.classList.toggle("touch-none");
 });
