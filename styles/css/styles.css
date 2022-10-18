@@ -43,6 +43,7 @@ header nav .nav-menu a {
   color: #ffffff;
   text-shadow: 2px 2px #2573d4;
   margin-inline: 0.8rem;
+  text-transform: uppercase;
 }
 header nav .hamburger {
   font: var(--fa-font-solid);
