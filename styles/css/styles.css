@@ -19,6 +19,7 @@ body {
 
 .touch-none {
   touch-action: none;
+  overflow: hidden;
 }
 
 header {
