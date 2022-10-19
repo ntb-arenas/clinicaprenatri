@@ -41,10 +41,17 @@ header .header-wrapper nav {
   padding-top: 0.8rem;
   margin-bottom: 2rem;
 }
+header .header-wrapper nav .nav-menu ul li {
+  transition: all 0.2s ease-in-out;
+  text-shadow: 2px 2px #2573d4;
+}
+header .header-wrapper nav .nav-menu ul li:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 2px #f881cf;
+}
 header .header-wrapper nav .nav-menu ul li a {
   font-size: 1.2rem;
   color: #ffffff;
-  text-shadow: 2px 2px #2573d4;
   margin-inline: 0.8rem;
   text-transform: uppercase;
 }
@@ -63,23 +70,17 @@ header .header-wrapper nav .hamburger.active::after {
   font-size: 2.3rem;
 }
 header .header-wrapper .header-content .header-content-wrapper .title {
-  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.568);
+  color: #3d3e40;
   max-width: 800px;
+  padding: 1rem;
+  box-shadow: 5px 5px rgba(248, 129, 206, 0.8);
 }
 header .header-wrapper .header-content .header-content-wrapper .title h1 {
   font-size: 3rem;
-  text-shadow: 2px 2px #f881cf;
 }
 header .header-wrapper .header-content .header-content-wrapper .title p {
-  text-shadow: 1px 1px #2573d4;
-}
-@media (max-width: 575.98px) {
-  header .header-wrapper .header-content .header-content-wrapper .title {
-    margin-bottom: 2rem;
-  }
-  header .header-wrapper .header-content .header-content-wrapper .header-img {
-    max-width: 200px;
-  }
+  color: #3d3e40;
 }
 @media (max-width: 767.98px) {
   header .header-wrapper nav {
@@ -94,7 +95,7 @@ header .header-wrapper .header-content .header-content-wrapper .title p {
     height: 100%;
     padding-top: 2rem;
     text-align: center;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     z-index: 1;
     overflow: scroll;
   }
@@ -114,6 +115,14 @@ header .header-wrapper .header-content .header-content-wrapper .title p {
   }
   header .header-wrapper .header-content .header-content-wrapper .header-img {
     max-width: 150px;
+  }
+}
+@media (max-width: 575.98px) {
+  header .header-wrapper .header-content .header-content-wrapper .title {
+    margin-bottom: 2rem;
+  }
+  header .header-wrapper .header-content .header-content-wrapper .header-img {
+    max-width: 200px;
   }
 }
 

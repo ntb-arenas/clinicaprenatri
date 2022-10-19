@@ -24,10 +24,15 @@ header {
       .nav-menu {
         ul {
           li {
+            transition: $transition;
+            text-shadow: 2px 2px $color-bg;
+            &:hover {
+              transform: scale(1.1);
+              text-shadow: 2px 2px $color-primary;
+            }
             a {
               font-size: 1.2rem;
               color: $color-text-primary;
-              text-shadow: 2px 2px $color-bg;
               margin-inline: 0.8rem;
               text-transform: uppercase;
             }
@@ -58,30 +63,19 @@ header {
     .header-content {
       .header-content-wrapper {
         .title {
-          color: $color-text-primary;
+          background-color: rgba(255, 255, 255, 0.568);
+          color: $color-text-secondary;
           max-width: 800px;
+          padding: 1rem;
+          box-shadow: 5px 5px #f881cecc;
 
           h1 {
             font-size: 3rem;
-            text-shadow: 2px 2px $color-primary;
+            // text-shadow: 2px 2px $color-primary;
           }
           p {
-            text-shadow: 1px 1px $color-bg;
-          }
-        }
-      }
-    }
-  }
-
-  @include sm {
-    .header-wrapper {
-      .header-content {
-        .header-content-wrapper {
-          .title {
-            margin-bottom: 2rem;
-          }
-          .header-img {
-            max-width: 200px;
+            color: $color-text-secondary;
+            // text-shadow: 1px 1px $color-primary;
           }
         }
       }
@@ -128,6 +122,20 @@ header {
           }
           .header-img {
             max-width: 150px;
+          }
+        }
+      }
+    }
+  }
+  @include sm {
+    .header-wrapper {
+      .header-content {
+        .header-content-wrapper {
+          .title {
+            margin-bottom: 2rem;
+          }
+          .header-img {
+            max-width: 200px;
           }
         }
       }
