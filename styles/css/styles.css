@@ -41,13 +41,6 @@ header .header-wrapper nav {
   padding-top: 0.8rem;
   margin-bottom: 2rem;
 }
-header .header-wrapper nav .nav-menu {
-  display: flex;
-  align-items: center;
-}
-header .header-wrapper nav .nav-menu ul {
-  display: flex;
-}
 header .header-wrapper nav .nav-menu ul li a {
   font-size: 1.2rem;
   color: #ffffff;
@@ -80,7 +73,15 @@ header .header-wrapper .header-content .header-content-wrapper .title h1 {
 header .header-wrapper .header-content .header-content-wrapper .title p {
   text-shadow: 1px 1px #2573d4;
 }
-@media (max-width: 768px) {
+@media (max-width: 575.98px) {
+  header .header-wrapper .header-content .header-content-wrapper .title {
+    margin-bottom: 2rem;
+  }
+  header .header-wrapper .header-content .header-content-wrapper .header-img {
+    max-width: 200px;
+  }
+}
+@media (max-width: 767.98px) {
   header .header-wrapper nav {
     margin-bottom: 2rem;
   }
@@ -108,16 +109,8 @@ header .header-wrapper .header-content .header-content-wrapper .title p {
   header .header-wrapper nav .nav-menu.active {
     left: 0;
   }
-  header .header-wrapper .header-content .header-content-wrapper .header-img {
-    max-width: 250px;
-  }
-}
-@media (max-width: 576px) {
   header .header-wrapper .header-content .header-content-wrapper .title h1 {
     font-size: 1.7rem;
-  }
-  header .header-wrapper .header-content .header-content-wrapper .title p {
-    text-justify: auto;
   }
   header .header-wrapper .header-content .header-content-wrapper .header-img {
     max-width: 150px;
