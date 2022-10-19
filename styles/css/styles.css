@@ -23,67 +23,72 @@ body {
 }
 
 header {
+  background: url(/assets/img/lisboa-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
+}
+header .header-wrapper {
   background: url(/assets/img/curve-separate.png);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-color: #789ace;
+  background-color: rgba(120, 154, 206, 0.6980392157);
   background-size: contain;
+  height: 100%;
 }
-header nav {
+header .header-wrapper nav {
   padding-top: 0.8rem;
   margin-bottom: 2rem;
 }
-header nav .nav-menu {
-  display: flex;
-  align-items: center;
-}
-header nav .nav-menu a {
+header .header-wrapper nav .nav-menu ul li a {
   font-size: 1.2rem;
   color: #ffffff;
   text-shadow: 2px 2px #2573d4;
   margin-inline: 0.8rem;
   text-transform: uppercase;
 }
-header nav .hamburger {
+header .header-wrapper nav .hamburger {
   font: var(--fa-font-solid);
   color: #ffffff;
   text-shadow: 2px 2px #2573d4;
   cursor: pointer;
 }
-header nav .hamburger::after {
+header .header-wrapper nav .hamburger::after {
   content: "\f0c9";
   font-size: 1.9rem;
 }
-header nav .hamburger.active::after {
+header .header-wrapper nav .hamburger.active::after {
   content: "\f00d";
   font-size: 2.3rem;
 }
-header .header-content .header-wrapper .title {
+header .header-wrapper .header-content .header-content-wrapper .title {
   color: #ffffff;
   max-width: 800px;
 }
-header .header-content .header-wrapper .title h1 {
+header .header-wrapper .header-content .header-content-wrapper .title h1 {
   font-size: 3rem;
   text-shadow: 2px 2px #f881cf;
 }
-header .header-content .header-wrapper .title p {
+header .header-wrapper .header-content .header-content-wrapper .title p {
   text-shadow: 1px 1px #2573d4;
 }
-@media (max-width: 768px) {
-  header {
-    height: 100%;
-  }
-  header nav {
+@media (max-width: 575.98px) {
+  header .header-wrapper .header-content .header-content-wrapper .title {
     margin-bottom: 2rem;
-    height: 100%;
   }
-  header nav .nav-menu {
+  header .header-wrapper .header-content .header-content-wrapper .header-img {
+    max-width: 200px;
+  }
+}
+@media (max-width: 767.98px) {
+  header .header-wrapper nav {
+    margin-bottom: 2rem;
+  }
+  header .header-wrapper nav .nav-menu {
     position: fixed;
     left: -100%;
     top: 70px;
-    gap: 0;
-    flex-direction: column;
     background-color: #789ace;
     width: 100%;
     height: 100%;
@@ -93,31 +98,21 @@ header .header-content .header-wrapper .title p {
     z-index: 1;
     overflow: scroll;
   }
-  header nav .nav-menu a {
-    padding: 1rem 0;
-    font-size: 1.5rem;
+  header .header-wrapper nav .nav-menu ul {
+    flex-direction: column;
   }
-  header nav .nav-menu.active {
+  header .header-wrapper nav .nav-menu ul li a {
+    display: inline-block;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+  }
+  header .header-wrapper nav .nav-menu.active {
     left: 0;
   }
-  header .header-content .header-wrapper .header-img {
-    max-width: 250px;
-  }
-}
-@media (max-width: 576px) {
-  header {
-    height: 100%;
-  }
-  header .header-content .header-wrapper .title {
-    margin-bottom: 6rem;
-  }
-  header .header-content .header-wrapper .title h1 {
+  header .header-wrapper .header-content .header-content-wrapper .title h1 {
     font-size: 1.7rem;
   }
-  header .header-content .header-wrapper .title p {
-    text-justify: auto;
-  }
-  header .header-content .header-wrapper .header-img {
+  header .header-wrapper .header-content .header-content-wrapper .header-img {
     max-width: 150px;
   }
 }
