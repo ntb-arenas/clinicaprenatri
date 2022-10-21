@@ -27,7 +27,7 @@ header {
             transition: $transition;
             text-shadow: 2px 2px $color-bg;
             &:hover {
-              transform: scale(1.1);
+              // transform: scale(1.1);
               text-shadow: 2px 2px $color-primary;
             }
             a {
@@ -136,6 +136,36 @@ header {
           }
           .header-img {
             max-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.specialties {
+  background-color: $color-bg-secondary;
+  height: 100vh;
+  .specialties-container {
+    .specialties-description {
+      text-align: center;
+      color: $color-text-secondary;
+      h2 {
+        font-size: 2rem;
+        padding: 1rem 0;
+      }
+    }
+    .specialties-tabs {
+      margin-top: 1rem;
+      ul {
+        #specialty-1 {
+          background-color: $color-primary;
+        }
+        li {
+          border: 1px solid gray;
+          a {
+            display: inline-block;
+            padding: 2rem;
           }
         }
       }
